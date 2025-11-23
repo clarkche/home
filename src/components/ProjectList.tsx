@@ -53,7 +53,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
                         
                         <h3 className="text-4xl font-fantasy font-bold text-slate-800 leading-tight">{project.title}</h3>
                         
-                        <p className="text-slate-600 leading-relaxed text-lg border-l-2 border-warm-accent/30 pl-4">
+                        <p className="text-slate-600 leading-relaxed text-lg border-l-2 border-warm-accent/30 pl-4 whitespace-pre-line">
                             {project.description}
                         </p>
 

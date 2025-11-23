@@ -9,7 +9,7 @@ import Gallery from './components/Gallery';
 import GalleryDetail from './components/GalleryDetail';
 import OracleChat from './components/OracleChat';
 import { ViewState, BlogPost, GallerySeries } from './types';
-import { BLOG_POSTS, PROJECTS, GALLERY_SERIES } from './constants';
+import { BLOG_POSTS, PROJECTS, GALLERY_SERIES } from './data/constants';
 
 const App: React.FC = () => {
   const [view, setView] = useState<ViewState>(ViewState.HOME);

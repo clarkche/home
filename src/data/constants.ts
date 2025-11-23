@@ -67,7 +67,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'p1',
     title: 'Smart Mirror',
-    description: 'AI Agent-centric hardware dedicated to creating stylish digital companions for Gen-Z.',
+    description: 'AI Agent-centric hardware dedicated to creating stylish digital companions for Gen-Z.\nRaised $3 million in angel round.',
     techStack: ['Android App', 'React Native', 'Multimodal LLMs'],
     link: 'https://wgdl.tech',
     github: '',
