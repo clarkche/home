@@ -77,7 +77,10 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           <div className="relative">
             <div className="absolute -inset-4 bg-white/40 blur-xl rounded-full -z-10"></div>
             <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto font-sans leading-relaxed animate-fade-in-up delay-200 font-medium">
-                I am Clark Chen. I construct scalable systems and elegant interfaces. 
+                I am Clark Chen.
+                <br/>
+                I construct scalable systems and elegant interfaces. 
+                <br/>
                 Welcome to my digital sanctum, where code meets creativity.
             </p>
           </div>
@@ -122,7 +125,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
 
              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
                 <SkillCard icon={Code2} title="Frontend" skills={['React', 'TypeScript', 'Tailwind', 'Next.js']} />
-                <SkillCard icon={Database} title="Backend" skills={['Node.js', 'PostgreSQL', 'GraphQL', 'Redis']} />
+                <SkillCard icon={Database} title="Backend" skills={['Python(FastAPI)', 'PostgreSQL', 'GraphQL', 'Redis']} />
                 <SkillCard icon={Cloud} title="Cloud" skills={['AWS', 'Docker', 'Kubernetes', 'CI/CD']} />
                 <SkillCard icon={Layout} title="Design" skills={['Figma', 'UI/UX', 'Accessibility', 'Motion']} />
              </div>
@@ -137,7 +140,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                  {/* Left Column - System Core Card */}
                  <div className="lg:col-span-1 h-full">
                     <TiltedCard className="h-full min-h-[400px]" rotationFactor={8}>
-                        <div className="glass-card h-full w-full rounded-3xl flex flex-col items-center justify-center border border-white/60 relative overflow-hidden group p-8 shadow-glass bg-white/40">
+                        <div className="glass-card h-full w-full rounded-3xl flex flex-col items-center justify-center relative overflow-hidden group p-8">
                              <div className="absolute inset-0 bg-gradient-to-br from-nature-100/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                              
                              {/* Decorative grid background */}
@@ -163,7 +166,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                  
                  {/* Right Column - Text & Stats */}
                  <div className="lg:col-span-2 flex flex-col gap-6 h-full">
-                    <div className="glass-card p-10 rounded-3xl relative flex-grow shadow-glass border border-white/60 bg-white/60 backdrop-blur-xl">
+                    <div className="glass-card p-10 rounded-3xl relative flex-grow">
                         <h2 className="text-4xl font-fantasy font-bold text-nature-400 mb-6">Architecture & Philosophy</h2>
                         <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
                             <p>
@@ -176,11 +179,11 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                     </div>
                     
                     <div className="grid grid-cols-2 gap-6 h-auto">
-                        <SpotlightCard className="p-8 flex flex-col items-center justify-center bg-white/60 border-white/60 backdrop-blur-md rounded-3xl shadow-sm hover:shadow-glass transition-shadow h-full">
+                        <SpotlightCard className="glass-card p-8 flex flex-col items-center justify-center rounded-3xl h-full">
                             <span className="block text-5xl font-bold text-nature-400 font-fantasy drop-shadow-sm mb-2">5+</span>
                             <span className="text-xs text-slate-500 font-mono uppercase tracking-widest">Years Exp</span>
                         </SpotlightCard>
-                         <SpotlightCard className="p-8 flex flex-col items-center justify-center bg-white/60 border-white/60 backdrop-blur-md rounded-3xl shadow-sm hover:shadow-glass transition-shadow h-full">
+                         <SpotlightCard className="glass-card p-8 flex flex-col items-center justify-center rounded-3xl h-full">
                             <span className="block text-5xl font-bold text-nature-400 font-fantasy drop-shadow-sm mb-2">20+</span>
                             <span className="text-xs text-slate-500 font-mono uppercase tracking-widest">Projects</span>
                         </SpotlightCard>
@@ -203,7 +206,7 @@ interface SkillCardProps {
 const SkillCard: React.FC<SkillCardProps> = ({ icon: Icon, title, skills }) => (
     <div className="group relative">
         <div className="absolute -inset-1 bg-gradient-to-b from-white to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition duration-300 blur-sm"></div>
-        <SpotlightCard className="p-6 h-full transition-all duration-300 hover:-translate-y-1 bg-white/50 border-white/60 hover:border-nature-300/30">
+        <SpotlightCard className="glass-card p-6 h-full transition-all duration-300 hover:-translate-y-1">
             <div className="w-12 h-12 bg-gradient-to-br from-white to-nature-100 rounded-xl flex items-center justify-center mb-4 shadow-inner-light text-nature-400 transition-transform group-hover:scale-110 border border-white">
                 <Icon size={24} />
             </div>

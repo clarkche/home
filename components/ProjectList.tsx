@@ -66,14 +66,16 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
                         </div>
 
                         <div className="flex gap-4 pt-4">
-                            <a href={project.github} className="flex items-center gap-2 px-5 py-2.5 bg-slate-100/80 hover:bg-white text-slate-800 rounded-xl transition-all border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-0.5">
-                                <Github size={18} />
-                                <span className="font-mono text-sm font-semibold">Source</span>
-                            </a>
                             <a href={project.link} className="flex items-center gap-2 px-5 py-2.5 bg-nature-400 text-white rounded-xl transition-all hover:bg-nature-400/90 shadow-lg shadow-nature-400/20 hover:shadow-nature-400/40 hover:-translate-y-0.5 group">
                                 <ExternalLink size={18} />
-                                <span className="font-mono text-sm font-semibold">Live Demo</span>
+                                <span className="font-mono text-sm font-semibold">Link</span>
                             </a>
+                            {project.github && (
+                                <a href={project.github} className="flex items-center gap-2 px-5 py-2.5 bg-slate-100/80 hover:bg-white text-slate-800 rounded-xl transition-all border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-0.5">
+                                    <Github size={18} />
+                                    <span className="font-mono text-sm font-semibold">Source</span>
+                                </a>
+                            )}
                         </div>
                     </div>
               </SpotlightCard>

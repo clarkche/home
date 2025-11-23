@@ -66,25 +66,25 @@ export const BLOG_POSTS: BlogPost[] = [
 export const PROJECTS: Project[] = [
   {
     id: 'p1',
-    title: 'Aether-Net',
-    description: 'A decentralized mesh network visualization tool built with WebGL and WebSockets.',
-    techStack: ['TypeScript', 'Three.js', 'Node.js'],
-    link: '#',
-    github: '#',
-    imageUrl: 'https://picsum.photos/600/400?random=4'
+    title: 'Smart Mirror',
+    description: 'AI Agent-centric hardware dedicated to creating stylish digital companions for Gen-Z.',
+    techStack: ['Android App', 'React Native', 'Multimodal LLMs'],
+    link: 'https://wgdl.tech',
+    github: '',
+    imageUrl: 'https://cdn.skyveil.ai/public/mirror.jpeg'
   },
   {
     id: 'p2',
-    title: 'Grimoire.io',
-    description: 'AI-powered note-taking app for developers that auto-generates documentation from code snippets.',
-    techStack: ['React', 'Gemini API', 'Tailwind'],
-    link: '#',
-    github: '#',
-    imageUrl: 'https://picsum.photos/600/400?random=5'
+    title: 'Skyveil AI',
+    description: 'The AI Copilot for Real-World Creation',
+    techStack: ['React', 'FastAPI', 'Tailwind'],
+    link: 'https://skyveil.ai',
+    github: '',
+    imageUrl: 'https://cdn.skyveil.ai/public/16.png'
   },
   {
     id: 'p3',
-    title: 'Void Walker',
+    title: 'Shi Dai (时代)',
     description: 'A procedurally generated dungeon crawler game running entirely in the browser.',
     techStack: ['Phaser', 'Rust/WASM'],
     link: '#',
