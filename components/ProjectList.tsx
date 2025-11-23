@@ -40,7 +40,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
             {/* Content Side */}
             <div className="w-full md:w-1/2 relative">
                  {/* Decorative background number */}
-                 <div className="absolute -top-10 -left-10 text-9xl font-fantasy font-bold text-slate-200/50 pointer-events-none select-none -z-10">
+                 <div className="absolute -top-10 -left-10 text-9xl font-fantasy font-bold text-slate-200/100 pointer-events-none select-none -z-10">
                      0{index + 1}
                  </div>
 
