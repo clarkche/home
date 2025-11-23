@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageSquare, Send, X, Sparkles, Bot } from 'lucide-react';
+import { MessageSquare, Send, X, Sparkles, Bot, Gpu } from 'lucide-react';
 import { sendMessageToOracle } from '../services/geminiService';
 import { ChatMessage } from '../types';
 import { Content } from "@google/genai";
@@ -63,7 +63,7 @@ const OracleChat: React.FC = () => {
           <div className="bg-white/40 backdrop-blur-md p-4 border-b border-white/50 flex justify-between items-center relative z-10">
             <div className="flex items-center space-x-2 text-nature-400">
               <div className="bg-nature-100 p-1.5 rounded-lg shadow-inner-light">
-                <Sparkles size={18} />
+                <Gpu size={18} />
               </div>
               <div>
                   <span className="font-fantasy font-bold tracking-wide block leading-none text-lg">THE ORACLE</span>

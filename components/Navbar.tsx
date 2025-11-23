@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, BookOpen, Cpu } from 'lucide-react';
+import { Home, BookOpen, Cpu, BookImage } from 'lucide-react';
 import { ViewState, NavItem } from '../types';
 
 interface NavbarProps {
@@ -9,8 +9,9 @@ interface NavbarProps {
 
 const navItems: NavItem[] = [
   { label: 'Sanctum', view: ViewState.HOME, icon: Home },
-  { label: 'Grimoire', view: ViewState.BLOG, icon: BookOpen },
   { label: 'Artifacts', view: ViewState.PROJECTS, icon: Cpu },
+  { label: 'Chronicles', view: ViewState.GALLERY, icon: BookImage},
+  { label: 'Grimoire', view: ViewState.BLOG, icon: BookOpen },
 ];
 
 const Navbar: React.FC<NavbarProps> = ({ currentView, onChangeView }) => {

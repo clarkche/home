@@ -79,7 +79,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
             <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto font-sans leading-relaxed animate-fade-in-up delay-200 font-medium">
                 I am Clark Chen.
                 <br/>
-                I construct scalable systems and elegant interfaces. 
+                Engineer of scalable systems and elegant interfaces. 
                 <br/>
                 Welcome to my digital sanctum, where code meets creativity.
             </p>

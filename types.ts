@@ -30,10 +30,28 @@ export enum ViewState {
   BLOG = 'BLOG',
   PROJECTS = 'PROJECTS',
   POST_DETAIL = 'POST_DETAIL',
+  GALLERY = 'GALLERY',
+  GALLERY_DETAIL = 'GALLERY_DETAIL',
 }
 
 export interface NavItem {
   label: string;
   view: ViewState;
   icon: React.ComponentType<any>;
+}
+
+export interface GalleryPhoto {
+  id: string;
+  url: string;
+  caption?: string;
+}
+
+export interface GallerySeries {
+  id: string;
+  title: string;
+  location: string;
+  date: string;
+  coverPhoto: string;
+  photos: GalleryPhoto[];
+  description: string;
 }
