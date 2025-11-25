@@ -123,9 +123,10 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                 <p className="mt-4 text-slate-500 font-mono">Mastery over the following arcanum.</p>
              </div>
 
-             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
+             <div className="grid grid-cols-2 md:grid-cols-5 gap-6 relative z-10">
                 <SkillCard icon={Code2} title="Frontend" skills={['React', 'TypeScript', 'Tailwind', 'Next.js']} />
                 <SkillCard icon={Database} title="Backend" skills={['Python(FastAPI)', 'PostgreSQL', 'GraphQL', 'Redis']} />
+                <SkillCard icon={Database} title="AI" skills={['Python(FastAPI)', 'PostgreSQL', 'GraphQL', 'Redis']} />
                 <SkillCard icon={Cloud} title="Cloud" skills={['AWS', 'Docker', 'Kubernetes', 'CI/CD']} />
                 <SkillCard icon={Layout} title="Design" skills={['Figma', 'UI/UX', 'Accessibility', 'Motion']} />
              </div>

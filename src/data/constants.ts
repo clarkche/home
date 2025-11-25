@@ -71,7 +71,7 @@ export const PROJECTS: Project[] = [
     techStack: ['Android App', 'React Native', 'Multimodal LLMs'],
     link: 'https://wgdl.tech',
     github: '',
-    imageUrl: 'https://cdn.skyveil.ai/public/mirror.jpeg'
+    imageUrl: 'https://cdn.clark21.com/public/mirror.jpeg'
   },
   {
     id: 'p2',
@@ -80,7 +80,7 @@ export const PROJECTS: Project[] = [
     techStack: ['React', 'FastAPI', 'Tailwind'],
     link: 'https://skyveil.ai',
     github: '',
-    imageUrl: 'https://cdn.skyveil.ai/public/16.png'
+    imageUrl: 'https://cdn.clark21.com/public/16.png'
   },
   {
     id: 'p3',
